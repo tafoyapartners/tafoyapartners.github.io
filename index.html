@@ -58,6 +58,19 @@ section{padding:6rem 2rem}
 .trust-inner{max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:center}
 .trust-label{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-right:1rem}
 .trust-badge{font-size:0.8rem;color:rgba(255,255,255,0.7);font-weight:500;letter-spacing:0.05em}
+
+/* Partner Section Styles */
+.partner-section{background:var(--white);padding:6rem 2rem;border-top:1px solid var(--gray-mid)}
+.partner-box{background:var(--gray-light);border-radius:8px;padding:3rem;display:flex;flex-direction:column;gap:2rem;border:1px solid var(--gray-mid)}
+.partner-header{display:flex;align-items:center;gap:1.5rem;border-bottom:1px solid var(--gray-mid);padding-bottom:1.5rem}
+.partner-avatar{width:70px;height:70px;background:var(--navy);color:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;}
+.partner-avatar svg{width:35px;height:35px;stroke:currentColor;stroke-width:1.5}
+.partner-info h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--navy);line-height:1.2}
+.partner-info p{font-size:0.9rem;color:var(--blue);font-weight:500;text-transform:uppercase;letter-spacing:0.05em}
+.partner-content p{font-size:1rem;color:var(--gray-text);line-height:1.6}
+.partner-logos{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.5rem}
+.partner-logo-tag{font-size:0.75rem;background:var(--white);padding:0.4rem 1rem;border-radius:4px;border:1px solid var(--gray-mid);color:var(--navy);font-weight:500}
+
 .cta-section{background:var(--white);padding:6rem 2rem;text-align:center;border-top:1px solid var(--gray-mid)}
 .cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
 .calendar-btn{display:inline-flex;align-items:center;gap:0.75rem;background:var(--blue);color:var(--white);padding:1rem 2.25rem;border-radius:4px;font-size:1rem;font-weight:500;transition:all 0.2s;cursor:pointer}
@@ -71,7 +84,7 @@ section{padding:6rem 2rem}
 footer{background:var(--navy-mid);padding:2rem;text-align:center;border-top:1px solid rgba(255,255,255,0.06)}
 footer p{font-size:0.78rem;color:rgba(255,255,255,0.4)}
 footer span{color:var(--gold)}
-@media(max-width:600px){nav{padding:1rem}.hero{padding:7rem 1.25rem 3rem}section{padding:4rem 1.25rem}.numbers{padding:2.5rem 1.25rem}.cta-buttons{flex-direction:column;align-items:stretch}}
+@media(max-width:600px){nav{padding:1rem}.hero{padding:7rem 1.25rem 3rem}section{padding:4rem 1.25rem}.numbers{padding:2.5rem 1.25rem}.cta-buttons{flex-direction:column;align-items:stretch}.partner-box{padding:2rem}}
 </style>
 </head>
 <body>
@@ -108,7 +121,7 @@ footer span{color:var(--gold)}
     <div class="container">
       <p class="section-tag">El Desafío</p>
       <h2 class="section-title">La brecha entre agilidad<br>y madurez corporativa</h2>
-      <p class="section-sub">El hipercrecimiento en México, Brasil, Colombia y el resto de la región presenta desafíos que no se resuelven solo con más financiamiento. Cuando la velocidad de una startup choca con la necesidad de estructura institucional, las ineficiencias devoran la rentabilidad operativa. Nosotros entramos a cerrar esa brecha.</p>
+      <p class="section-sub">El hipercrecimiento en México, Brasil y el resto de la región presenta desafíos que no se resuelven solo con más financiamiento. Cuando la velocidad de una startup choca con la necesidad de estructura institucional, las ineficiencias devoran la rentabilidad operativa. Nosotros entramos a cerrar esa brecha.</p>
     </div>
   </section>
 
@@ -160,6 +173,35 @@ footer span{color:var(--gold)}
     </div>
   </div>
 
+  <!-- NUEVA SECCIÓN DE PARTNERSHIP GLOBAL -->
+  <section class="partner-section">
+    <div class="container">
+      <p class="section-tag">Ecosistema de Ejecución</p>
+      <h2 class="section-title">Nuestra capacidad de arquitectura tecnológica</h2>
+      <p class="section-sub" style="margin-bottom: 3rem;">Para asegurar que la estrategia operativa escale con la tecnología adecuada, Tafoya Partners mantiene una alianza corporativa exclusiva para la implementación de Inteligencia Artificial y gobernanza de datos.</p>
+      
+      <div class="partner-box">
+        <div class="partner-header">
+          <div class="partner-avatar">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
+          </div>
+          <div class="partner-info">
+            <h3>Alianza Tecnológica Global</h3>
+            <p>Strategic Partnership | Enterprise Growth & AI Transformation</p>
+          </div>
+        </div>
+        <div class="partner-content">
+          <p>Nuestra práctica tecnológica está respaldada por liderazgo ejecutivo con experiencia directa construyendo infraestructuras para las empresas más grandes del mundo. Traducimos la Inteligencia Artificial y las oportunidades de mercado en agendas prácticas de crecimiento, eficiencia corporativa y modernización.</p>
+          <div class="partner-logos">
+            <span class="partner-logo-tag">Liderazgo Ex-Amazon (AWS)</span>
+            <span class="partner-logo-tag">Arquitectura Pública (Ex-CTO Seattle)</span>
+            <span class="partner-logo-tag">Gobierno y Mitigación de Riesgos AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-section">
     <div class="container">
       <p class="section-tag" style="color:var(--gold)">Siguiente Paso</p>
@@ -206,7 +248,7 @@ footer span{color:var(--gold)}
     <div class="container">
       <p class="section-tag">The Challenge</p>
       <h2 class="section-title">The gap between agility<br>and corporate maturity</h2>
-      <p class="section-sub">Hyper-growth in Mexico, Brazil, Colombia, and the rest of the region presents challenges that aren't solved just with more funding. When a startup's speed collides with the need for institutional structure, inefficiencies devour operational profitability. We step in to bridge that gap.</p>
+      <p class="section-sub">Hyper-growth in Mexico, Brazil, and the rest of the region presents challenges that aren't solved just with more funding. When a startup's speed collides with the need for institutional structure, inefficiencies devour operational profitability. We step in to bridge that gap.</p>
     </div>
   </section>
 
@@ -258,6 +300,35 @@ footer span{color:var(--gold)}
     </div>
   </div>
 
+  <!-- NUEVA SECCIÓN DE PARTNERSHIP GLOBAL -->
+  <section class="partner-section">
+    <div class="container">
+      <p class="section-tag">Execution Ecosystem</p>
+      <h2 class="section-title">Our Technological Architecture Capability</h2>
+      <p class="section-sub" style="margin-bottom: 3rem;">To ensure that operational strategy scales with the right technology, Tafoya Partners maintains an exclusive corporate alliance for Artificial Intelligence implementation and data governance.</p>
+      
+      <div class="partner-box">
+        <div class="partner-header">
+          <div class="partner-avatar">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
+          </div>
+          <div class="partner-info">
+            <h3>Global Technology Alliance</h3>
+            <p>Strategic Partnership | Enterprise Growth & AI Transformation</p>
+          </div>
+        </div>
+        <div class="partner-content">
+          <p>Our technology practice is backed by executive leadership with hands-on experience building infrastructures for the world's largest enterprises. We translate Artificial Intelligence and market opportunities into practical agendas for corporate growth, efficiency, and modernization.</p>
+          <div class="partner-logos">
+            <span class="partner-logo-tag">Ex-Amazon (AWS) Leadership</span>
+            <span class="partner-logo-tag">Public Architecture (Ex-CTO Seattle)</span>
+            <span class="partner-logo-tag">AI Risk Mitigation & Governance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-section">
     <div class="container">
       <p class="section-tag" style="color:var(--gold)">Next Step</p>
@@ -304,7 +375,7 @@ footer span{color:var(--gold)}
     <div class="container">
       <p class="section-tag">O Desafio</p>
       <h2 class="section-title">A lacuna entre agilidade<br>e maturidade corporativa</h2>
-      <p class="section-sub">O hipercrescimento no Brasil, México, Colômbia e no resto da região apresenta desafios que não se resolvem apenas com mais financiamento. Quando a velocidade de uma startup se choca com a necessidade de estrutura institucional, as ineficiências devoram a rentabilidade operacional. Nós entramos para preencher essa lacuna.</p>
+      <p class="section-sub">O hipercrescimento no Brasil, México e no resto da região apresenta desafios que não se resolvem apenas com mais financiamento. Quando a velocidade de uma startup se choca com a necessidade de estrutura institucional, as ineficiências devoram a rentabilidade operacional. Nós entramos para preencher essa lacuna.</p>
     </div>
   </section>
 
@@ -342,7 +413,7 @@ footer span{color:var(--gold)}
     <div class="container">
       <p class="section-tag">Respaldo e Autoridade Institucional</p>
       <h2 class="section-title">Experiência Corporativa de Classe Mundial</h2>
-      <p class="section-sub" style="margin-bottom: 2rem;">Com mais de 25 anos de trajetória executiva liderando operações comerciais em toda a América Latina para gigantes globais, nossa firma traz rigor institucional para empresas regionais em fase de hipercrescimento. Não somos consultores teóricos; somos operadores de trincheira e arquitetos de negócios com experiência real escalando divisões corporativas multimilionárias.</p>
+      <p class="section-sub" style="margin-bottom: 2rem;">Com mais de 25 anos de trajetória executiva liderando operações comerciais em toda a América Latina para gigantes globais, nossa firma traz rigor institucional para empresas regionais em fase de hipercrescimento. Não somos consultores teóricos; somos operadores de trincheira e arquitetos de negócios com experiência real escalando divisões corporativas multimillonárias.</p>
     </div>
   </section>
 
@@ -355,6 +426,35 @@ footer span{color:var(--gold)}
       <span class="trust-badge">Canon</span>
     </div>
   </div>
+
+  <!-- NUEVA SECCIÓN DE PARTNERSHIP GLOBAL -->
+  <section class="partner-section">
+    <div class="container">
+      <p class="section-tag">Ecossistema de Execução</p>
+      <h2 class="section-title">Nossa Capacidade de Arquitetura Tecnológica</h2>
+      <p class="section-sub" style="margin-bottom: 3rem;">Para garantir que a estratégia operacional escale com a tecnologia certa, a Tafoya Partners mantém uma aliança corporativa exclusiva para implementação de Inteligência Artificial e governança de dados.</p>
+      
+      <div class="partner-box">
+        <div class="partner-header">
+          <div class="partner-avatar">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
+          </div>
+          <div class="partner-info">
+            <h3>Aliança Tecnológica Global</h3>
+            <p>Strategic Partnership | Enterprise Growth & AI Transformation</p>
+          </div>
+        </div>
+        <div class="partner-content">
+          <p>Nossa prática tecnológica é apoiada por liderança executiva com experiência prática na construção de infraestruturas para as maiores empresas do mundo. Traduzimos a Inteligência Artificial e as oportunidades de mercado em agendas práticas de crescimento corporativo, eficiência e modernização.</p>
+          <div class="partner-logos">
+            <span class="partner-logo-tag">Liderança Ex-Amazon (AWS)</span>
+            <span class="partner-logo-tag">Arquitetura Pública (Ex-CTO Seattle)</span>
+            <span class="partner-logo-tag">Governança de Dados e IA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="cta-section">
     <div class="container">
