@@ -4,49 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tafoya Partners | Arquitectura Operativa para Escalar en LATAM</title>
-<meta name="description" content="Actuamos como Socios Estratégicos y Ejecutivos Fraccionales para fondos de Capital Privado (PE/VC) y empresas Serie B+. Institucionalizamos operaciones y aseguramos el crecimiento rentable en LATAM.">
-<meta name="keywords" content="Socio Estratégico, Ejecutivo Fraccional, Asesor de Consejo, PE/VC LATAM, Transformación Operativa, Serie B, Go-to-Market LATAM, Inteligencia Artificial Empresarial, Federico Tafoya Doñan">
+<meta name="description" content="Actuamos como Socios Estratégicos y Ejecutivos Fraccionales para fondos de Capital Privado (PE/VC) y empresas Serie B+. Institucionalizamos operaciones y aseguramos el crecimiento rentable.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Tafoya Partners">
 <link rel="canonical" href="https://www.tafoyapartners.com/">
-
-<!-- Open Graph / LinkedIn / WhatsApp -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.tafoyapartners.com/">
-<meta property="og:title" content="Tafoya Partners | Arquitectura Operativa y Liderazgo Fraccional">
-<meta property="og:description" content="Socios Estratégicos para fondos de Capital Privado (PE/VC) y empresas Serie B+ en América Latina.">
-<meta property="og:image" content="https://www.tafoyapartners.com/og-image.jpg">
-<meta property="og:locale" content="es_MX">
-<meta property="og:site_name" content="Tafoya Partners">
-
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tafoya Partners | Arquitectura Operativa en LATAM">
-<meta name="twitter:description" content="Socios Estratégicos y Ejecutivos Fraccionales para fondos de Capital Privado y empresas Serie B+.">
-<meta name="twitter:image" content="https://www.tafoyapartners.com/og-image.jpg">
-
-<!-- Schema: Organización -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Tafoya Partners",
-  "description": "Firma de Asesoría de Consejo y Liderazgo Ejecutivo Fraccional para fondos de capital privado (PE/VC) y empresas Serie B+ en LATAM.",
-  "url": "https://www.tafoyapartners.com",
-  "telephone": "+52-55-1973-1932",
-  "email": "federico@tafoyapartners.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Ciudad de México",
-    "addressCountry": "MX"
-  },
-  "areaServed": ["MX", "BR", "CO", "LATAM"],
-  "founder": {
-    "@type": "Person",
-    "name": "Federico Tafoya Doñan"
-  }
-}
-</script>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -59,6 +20,11 @@ a{text-decoration:none;color:inherit}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 2rem;display:flex;justify-content:space-between;align-items:center;background:rgba(10,22,40,0.95);backdrop-filter:blur(8px)}
 .nav-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;color:var(--white);letter-spacing:0.02em}
 .nav-brand span{color:var(--gold)}
+.nav-controls{display:flex;align-items:center;gap:1.5rem}
+.lang-selector{display:flex;gap:0.75rem;font-size:0.85rem;font-weight:500;color:rgba(255,255,255,0.4)}
+.lang-btn{cursor:pointer;transition:color 0.2s}
+.lang-btn:hover{color:var(--white)}
+.lang-btn.active{color:var(--gold)}
 .nav-cta{background:var(--blue);color:var(--white);padding:0.5rem 1.25rem;border-radius:4px;font-size:0.85rem;font-weight:500;transition:opacity 0.2s}
 .nav-cta:hover{opacity:0.85}
 .hero{min-height:100vh;background:var(--navy);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:8rem 2rem 4rem;position:relative;overflow:hidden}
@@ -111,100 +77,322 @@ footer span{color:var(--gold)}
 <body>
 <nav>
   <div class="nav-brand">Tafoya<span>Partners</span></div>
-  <a class="nav-cta" href="https://wa.me/525519731932?text=Hola%20Federico%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n%20estrat%C3%A9gica" target="_blank">Contactar</a>
+  <div class="nav-controls">
+    <div class="lang-selector">
+      <span class="lang-btn active" id="btn-es" onclick="switchLang('es')">ES</span>
+      <span class="lang-btn" id="btn-en" onclick="switchLang('en')">EN</span>
+      <span class="lang-btn" id="btn-pt" onclick="switchLang('pt')">PT</span>
+    </div>
+    <a class="nav-cta" href="https://wa.me/525519731932" target="_blank" id="nav-cta-text">Contactar</a>
+  </div>
 </nav>
-<section class="hero">
-  <p class="hero-eyebrow">Arquitectura Operativa para Escalar en LATAM</p>
-  <h1>El capital no escala<br>operaciones <em>rotas.</em></h1>
-  <p class="hero-sub">Actuamos como Socios Estratégicos y Ejecutivos Fraccionales para fondos de Capital Privado (PE/VC) y empresas Serie B+. Institucionalizamos operaciones, eliminamos fricciones y aseguramos el crecimiento rentable de tu portafolio.</p>
-  <a class="hero-btn" href="https://wa.me/525519731932?text=Hola%20Federico%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n%20estrat%C3%A9gica" target="_blank">
-    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-    Agendar Sesión Estratégica
-  </a>
-  <div class="hero-divider"></div>
-</section>
 
-<div class="numbers">
-  <div class="numbers-grid">
-    <div><div class="stat-val"><span>+</span>25</div><div class="stat-label">Años de Liderazgo Ejecutivo</div></div>
-    <div><div class="stat-val">Serie B<span>+</span></div><div class="stat-label">Enfoque de Hipercrecimiento</div></div>
-    <div><div class="stat-val">LATAM</div><div class="stat-label">Cobertura Regional</div></div>
-    <div><div class="stat-val">PE / VC</div><div class="stat-label">Asesoría de Consejo</div></div>
-  </div>
-</div>
+<!-- ================= ESPAÑOL ================= -->
+<div id="content-es">
+  <section class="hero">
+    <p class="hero-eyebrow">Arquitectura Operativa para Escalar en LATAM</p>
+    <h1>El capital no escala<br>operaciones <em>fragmentadas.</em></h1>
+    <p class="hero-sub">Actuamos como Socios Estratégicos y Ejecutivos Fraccionales para fondos de Capital Privado (PE/VC) y empresas Serie B+. Institucionalizamos operaciones, eliminamos fricciones y aseguramos el crecimiento rentable de tu portafolio.</p>
+    <a class="hero-btn" href="https://wa.me/525519731932?text=Hola%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n%20estrat%C3%A9gica" target="_blank">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      Agendar Sesión Estratégica
+    </a>
+    <div class="hero-divider"></div>
+  </section>
 
-<section class="problem-section">
-  <div class="container">
-    <p class="section-tag">El Desafío</p>
-    <h2 class="section-title">La brecha entre agilidad<br>y madurez corporativa</h2>
-    <p class="section-sub">El hipercrecimiento en México, Brasil, Colombia y el resto de la región presenta desafíos que no se resuelven solo con más financiamiento. Cuando la velocidad de una startup choca con la necesidad de estructura institucional, las ineficiencias devoran la rentabilidad operativa. Nosotros entramos a cerrar esa brecha.</p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <p class="section-tag">Nuestros Mandatos</p>
-    <h2 class="section-title">Construimos el músculo operativo<br>para tu próxima etapa</h2>
-    <div class="mandates-grid">
-      <div class="mandate-card">
-        <div class="mandate-icon">
-          <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
-        </div>
-        <h4>Asesoría de Consejo e Inversionistas</h4>
-        <p>Ejecución de due diligence operativo y supervisión estratégica en junta directiva para proteger la inyección de capital y asegurar el ROI de portafolios de inversión.</p>
-      </div>
-      <div class="mandate-card">
-        <div class="mandate-icon">
-          <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
-        </div>
-        <h4>Liderazgo Ejecutivo Fraccional</h4>
-        <p>Diseñamos la estructura de gobierno y la estrategia Go-to-Market necesaria para conquistar mercados regionales, aportando disciplina corporativa sin desangrar la caja.</p>
-      </div>
-      <div class="mandate-card">
-        <div class="mandate-icon">
-          <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z"/></svg>
-        </div>
-        <h4>Transformación e IA Empresarial</h4>
-        <p>Asesoría en la implementación de arquitecturas de negocio avanzadas e Inteligencia Artificial para automatizar procesos clave y absorber el crecimiento acelerado.</p>
-      </div>
+  <div class="numbers">
+    <div class="numbers-grid">
+      <div><div class="stat-val"><span>+</span>25</div><div class="stat-label">Años de Liderazgo Ejecutivo</div></div>
+      <div><div class="stat-val">Serie B<span>+</span></div><div class="stat-label">Enfoque de Hipercrecimiento</div></div>
+      <div><div class="stat-val">LATAM</div><div class="stat-label">Cobertura Regional</div></div>
+      <div><div class="stat-val">PE / VC</div><div class="stat-label">Asesoría de Consejo</div></div>
     </div>
   </div>
-</section>
 
-<section class="about-section">
-  <div class="container">
-    <p class="section-tag">Respaldo y Autoridad</p>
-    <h2 class="section-title">Liderado por Federico Tafoya Doñan</h2>
-    <p class="section-sub" style="margin-bottom: 2rem;">Con más de 25 años de trayectoria ejecutiva liderando operaciones comerciales en toda América Latina para gigantes globales, Federico aporta rigor institucional a empresas regionales en etapa de hipercrecimiento. No somos consultores teóricos; somos operadores de trinchera y arquitectos de negocios con experiencia real escalando divisiones corporativas multimillonarias.</p>
-  </div>
-</section>
+  <section class="problem-section">
+    <div class="container">
+      <p class="section-tag">El Desafío</p>
+      <h2 class="section-title">La brecha entre agilidad<br>y madurez corporativa</h2>
+      <p class="section-sub">El hipercrecimiento en México, Brasil, Colombia y el resto de la región presenta desafíos que no se resuelven solo con más financiamiento. Cuando la velocidad de una startup choca con la necesidad de estructura institucional, las ineficiencias devoran la rentabilidad operativa. Nosotros entramos a cerrar esa brecha.</p>
+    </div>
+  </section>
 
-<div class="trust-strip">
-  <div class="trust-inner">
-    <span class="trust-label">Experiencia Corporativa Previa</span>
-    <span class="trust-badge">GE Healthcare</span>
-    <span class="trust-badge">Becton Dickinson (BD)</span>
-    <span class="trust-badge">Edwards Lifesciences</span>
-    <span class="trust-badge">Canon</span>
+  <section>
+    <div class="container">
+      <p class="section-tag">Nuestros Mandatos</p>
+      <h2 class="section-title">Construimos el músculo operativo<br>para tu próxima etapa</h2>
+      <div class="mandates-grid">
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+          </div>
+          <h4>Asesoría de Consejo e Inversionistas</h4>
+          <p>Ejecución de due diligence operativo y supervisión estratégica en junta directiva para proteger la inyección de capital y asegurar el ROI de portafolios de inversión.</p>
+        </div>
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+          </div>
+          <h4>Liderazgo Ejecutivo Fraccional</h4>
+          <p>Diseñamos la estructura de gobierno y la estrategia Go-to-Market necesaria para conquistar mercados regionales, aportando disciplina corporativa sin desangrar la caja.</p>
+        </div>
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z"/></svg>
+          </div>
+          <h4>Transformación e IA Empresarial</h4>
+          <p>Asesoría en la implementación de arquitecturas de negocio avanzadas e Inteligencia Artificial para automatizar procesos clave y absorber el crecimiento acelerado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <p class="section-tag">Respaldo y Autoridad Institucional</p>
+      <h2 class="section-title">Experiencia corporativa de clase mundial</h2>
+      <p class="section-sub" style="margin-bottom: 2rem;">Con más de 25 años de trayectoria ejecutiva liderando operaciones comerciales en toda América Latina para gigantes globales, nuestra firma aporta rigor institucional a empresas regionales en etapa de hipercrecimiento. No somos consultores teóricos; somos operadores de trinchera y arquitectos de negocios con experiencia real escalando divisiones corporativas multimillonarias.</p>
+    </div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="trust-inner">
+      <span class="trust-label">Experiencia Corporativa Previa</span>
+      <span class="trust-badge">GE Healthcare</span>
+      <span class="trust-badge">Becton Dickinson (BD)</span>
+      <span class="trust-badge">Edwards Lifesciences</span>
+      <span class="trust-badge">Canon</span>
+    </div>
   </div>
+
+  <section class="cta-section">
+    <div class="container">
+      <p class="section-tag">Siguiente Paso</p>
+      <h2 class="section-title">Preparados para tu próxima etapa de crecimiento</h2>
+      <p class="section-sub" style="margin: 0 auto 2.5rem;">Si estás escalando operaciones en LATAM y necesitas asegurar la ejecución de tu estrategia a nivel directivo, hablemos.</p>
+      <a class="whatsapp-btn" href="https://wa.me/525519731932?text=Hola%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n%20estrat%C3%A9gica" target="_blank">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Contactar por WhatsApp
+      </a>
+      <p class="cta-note">También puedes escribir a federico@tafoyapartners.com</p>
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 <span>Tafoya Partners</span> · Firma de Asesoría de Consejo y Liderazgo Fraccional · LATAM</p>
+  </footer>
 </div>
 
-<section class="cta-section">
-  <div class="container">
-    <p class="section-tag">Siguiente Paso</p>
-    <h2 class="section-title">Preparados para tu próxima etapa de crecimiento</h2>
-    <p class="section-sub" style="margin: 0 auto 2.5rem;">Si estás escalando operaciones en LATAM y necesitas asegurar la ejecución de tu estrategia a nivel directivo, hablemos.</p>
-    
-    <a class="whatsapp-btn" href="https://wa.me/525519731932?text=Hola%20Federico%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n%20estrat%C3%A9gica" target="_blank">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Contactar por WhatsApp
+<!-- ================= ENGLISH ================= -->
+<div id="content-en" style="display: none;">
+  <section class="hero">
+    <p class="hero-eyebrow">Operational Architecture for Scaling in LATAM</p>
+    <h1>Capital doesn't scale<br><em>fragmented</em> operations.</h1>
+    <p class="hero-sub">We act as Strategic Partners and Fractional Executives for Private Equity (PE/VC) funds and Series B+ enterprises. We institutionalize operations, eliminate friction, and ensure profitable growth for your portfolio.</p>
+    <a class="hero-btn" href="https://wa.me/525519731932?text=Hello%2C%20I'm%20interested%20in%20scheduling%20a%20strategic%20session" target="_blank">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      Schedule Strategic Session
     </a>
-    <p class="cta-note">También puedes escribir a federico@tafoyapartners.com</p>
-  </div>
-</section>
+    <div class="hero-divider"></div>
+  </section>
 
-<footer>
-  <p>© 2026 <span>Tafoya Partners</span> · Firma de Asesoría de Consejo y Liderazgo Fraccional · LATAM</p>
-</footer>
+  <div class="numbers">
+    <div class="numbers-grid">
+      <div><div class="stat-val"><span>+</span>25</div><div class="stat-label">Years Executive Leadership</div></div>
+      <div><div class="stat-val">Series B<span>+</span></div><div class="stat-label">Hyper-growth Focus</div></div>
+      <div><div class="stat-val">LATAM</div><div class="stat-label">Regional Coverage</div></div>
+      <div><div class="stat-val">PE / VC</div><div class="stat-label">Board Advisory</div></div>
+    </div>
+  </div>
+
+  <section class="problem-section">
+    <div class="container">
+      <p class="section-tag">The Challenge</p>
+      <h2 class="section-title">The gap between agility<br>and corporate maturity</h2>
+      <p class="section-sub">Hyper-growth in Mexico, Brazil, Colombia, and the rest of the region presents challenges that aren't solved just with more funding. When a startup's speed collides with the need for institutional structure, inefficiencies devour operational profitability. We step in to bridge that gap.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="section-tag">Our Mandates</p>
+      <h2 class="section-title">Building the operational muscle<br>for your next stage</h2>
+      <div class="mandates-grid">
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+          </div>
+          <h4>Board & Investor Advisory</h4>
+          <p>Operational due diligence and strategic board oversight to protect capital injection and ensure ROI for investment portfolios.</p>
+        </div>
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+          </div>
+          <h4>Fractional Executive Leadership</h4>
+          <p>Designing the governance structure and Go-to-Market strategy needed to conquer regional markets, bringing corporate discipline without bleeding cash.</p>
+        </div>
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z"/></svg>
+          </div>
+          <h4>Enterprise Transformation & AI</h4>
+          <p>Advisory on deploying advanced business architectures and Artificial Intelligence to automate key processes and absorb accelerated growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <p class="section-tag">Institutional Backing & Authority</p>
+      <h2 class="section-title">World-Class Corporate Experience</h2>
+      <p class="section-sub" style="margin-bottom: 2rem;">With over 25 years of executive experience leading commercial operations across Latin America for global giants, our firm brings institutional rigor to regional companies in hyper-growth stages. We are not theoretical consultants; we are trench operators and business architects with real experience scaling multi-million dollar corporate divisions.</p>
+    </div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="trust-inner">
+      <span class="trust-label">Prior Corporate Experience</span>
+      <span class="trust-badge">GE Healthcare</span>
+      <span class="trust-badge">Becton Dickinson (BD)</span>
+      <span class="trust-badge">Edwards Lifesciences</span>
+      <span class="trust-badge">Canon</span>
+    </div>
+  </div>
+
+  <section class="cta-section">
+    <div class="container">
+      <p class="section-tag">Next Step</p>
+      <h2 class="section-title">Ready for your next stage of growth</h2>
+      <p class="section-sub" style="margin: 0 auto 2.5rem;">If you are scaling operations in LATAM and need to secure the execution of your strategy at the executive level, let's talk.</p>
+      <a class="whatsapp-btn" href="https://wa.me/525519731932?text=Hello%2C%20I'm%20interested%20in%20scheduling%20a%20strategic%20session" target="_blank">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Contact via WhatsApp
+      </a>
+      <p class="cta-note">You can also email federico@tafoyapartners.com</p>
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 <span>Tafoya Partners</span> · Board Advisory and Fractional Leadership Firm · LATAM</p>
+  </footer>
+</div>
+
+<!-- ================= PORTUGUÊS ================= -->
+<div id="content-pt" style="display: none;">
+  <section class="hero">
+    <p class="hero-eyebrow">Arquitetura Operacional para Escalar na América Latina</p>
+    <h1>O capital não escala<br>operações <em>fragmentadas.</em></h1>
+    <p class="hero-sub">Atuamos como Parceiros Estratégicos e Executivos Fracionários para fundos de Private Equity (PE/VC) e empresas Série B+. Institucionalizamos operações, eliminamos atritos e garantimos o crescimento rentável do seu portfólio.</p>
+    <a class="hero-btn" href="https://wa.me/525519731932?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20agendar%20uma%20sess%C3%A3o%20estrat%C3%A9gica" target="_blank">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      Agendar Sessão Estratégica
+    </a>
+    <div class="hero-divider"></div>
+  </section>
+
+  <div class="numbers">
+    <div class="numbers-grid">
+      <div><div class="stat-val"><span>+</span>25</div><div class="stat-label">Anos de Liderança Executiva</div></div>
+      <div><div class="stat-val">Série B<span>+</span></div><div class="stat-label">Foco em Hipercrescimento</div></div>
+      <div><div class="stat-val">LATAM</div><div class="stat-label">Cobertura Regional</div></div>
+      <div><div class="stat-val">PE / VC</div><div class="stat-label">Assessoria de Conselho</div></div>
+    </div>
+  </div>
+
+  <section class="problem-section">
+    <div class="container">
+      <p class="section-tag">O Desafio</p>
+      <h2 class="section-title">A lacuna entre agilidade<br>e maturidade corporativa</h2>
+      <p class="section-sub">O hipercrescimento no Brasil, México, Colômbia e no resto da região apresenta desafios que não se resolvem apenas com mais financiamento. Quando a velocidade de uma startup se choca com a necessidade de estrutura institucional, as ineficiências devoram a rentabilidade operacional. Nós entramos para preencher essa lacuna.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="section-tag">Nossos Mandatos</p>
+      <h2 class="section-title">Construímos o músculo operacional<br>para sua próxima fase</h2>
+      <div class="mandates-grid">
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+          </div>
+          <h4>Assessoria de Conselho e Investidores</h4>
+          <p>Execução de due diligence operacional e supervisão estratégica no conselho diretivo para proteger a injeção de capital e garantir o ROI de portfólios de investimento.</p>
+        </div>
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+          </div>
+          <h4>Liderança Executiva Fracionária</h4>
+          <p>Desenhamos a estrutura de governança e a estratégia Go-to-Market necessárias para conquistar mercados regionais, trazendo disciplina corporativa sem sangrar o caixa.</p>
+        </div>
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z"/></svg>
+          </div>
+          <h4>Transformação e IA Empresarial</h4>
+          <p>Assessoria na implementação de arquiteturas de negócios avançadas e Inteligência Artificial para automatizar processos-chave e absorver o crescimento acelerado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <p class="section-tag">Respaldo e Autoridade Institucional</p>
+      <h2 class="section-title">Experiência Corporativa de Classe Mundial</h2>
+      <p class="section-sub" style="margin-bottom: 2rem;">Com mais de 25 anos de trajetória executiva liderando operações comerciais em toda a América Latina para gigantes globais, nossa firma traz rigor institucional para empresas regionais em fase de hipercrescimento. Não somos consultores teóricos; somos operadores de trincheira e arquitetos de negócios com experiência real escalando divisões corporativas multimilionárias.</p>
+    </div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="trust-inner">
+      <span class="trust-label">Experiência Corporativa Anterior</span>
+      <span class="trust-badge">GE Healthcare</span>
+      <span class="trust-badge">Becton Dickinson (BD)</span>
+      <span class="trust-badge">Edwards Lifesciences</span>
+      <span class="trust-badge">Canon</span>
+    </div>
+  </div>
+
+  <section class="cta-section">
+    <div class="container">
+      <p class="section-tag">Próximo Passo</p>
+      <h2 class="section-title">Preparados para sua próxima fase de crescimento</h2>
+      <p class="section-sub" style="margin: 0 auto 2.5rem;">Se você está escalando operações na LATAM e precisa garantir a execução de sua estratégia em nível executivo, vamos conversar.</p>
+      <a class="whatsapp-btn" href="https://wa.me/525519731932?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20agendar%20uma%20sess%C3%A3o%20estrat%C3%A9gica" target="_blank">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Contato via WhatsApp
+      </a>
+      <p class="cta-note">Você também pode escrever para federico@tafoyapartners.com</p>
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 <span>Tafoya Partners</span> · Assessoria de Conselho e Liderança Fracionária · LATAM</p>
+  </footer>
+</div>
+
+<script>
+  function switchLang(lang) {
+    document.getElementById('content-es').style.display = (lang === 'es') ? 'block' : 'none';
+    document.getElementById('content-en').style.display = (lang === 'en') ? 'block' : 'none';
+    document.getElementById('content-pt').style.display = (lang === 'pt') ? 'block' : 'none';
+    
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('btn-' + lang).classList.add('active');
+    
+    const ctaBtn = document.getElementById('nav-cta-text');
+    if (lang === 'es') {
+      ctaBtn.textContent = 'Contactar';
+      ctaBtn.href = "https://wa.me/525519731932?text=Hola%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n%20estrat%C3%A9gica";
+    } else if (lang === 'en') {
+      ctaBtn.textContent = 'Contact';
+      ctaBtn.href = "https://wa.me/525519731932?text=Hello%2C%20I'm%20interested%20in%20scheduling%20a%20strategic%20session";
+    } else if (lang === 'pt') {
+      ctaBtn.textContent = 'Contato';
+      ctaBtn.href = "https://wa.me/525519731932?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20agendar%20uma%20sess%C3%A3o%20estrat%C3%A9gica";
+    }
+  }
+</script>
 </body>
 </html>
