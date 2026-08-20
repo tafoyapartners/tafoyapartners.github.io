@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tafoya Partners | Arquitectura Operativa para Escalar en LATAM</title>
-<meta name="description" content="Actuamos como Socios Estratégicos y Ejecutivos Fraccionales para fondos de Capital Privado (PE/VC) y empresas Serie B+. Institucionalizamos operaciones y aseguramos el crecimiento rentable.">
+<meta name="description" content="Ejecutivos Fraccionales para fondos de Capital Privado (PE/VC) y empresas de alto crecimiento. Institucionalizamos operaciones y aseguramos Enterprise Value.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Tafoya Partners">
 <link rel="canonical" href="https://www.tafoyapartners.com/">
@@ -28,51 +28,62 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 2rem;display
 .hero{min-height:100vh;background:var(--navy);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:8rem 2rem 4rem;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%, rgba(0,111,227,0.12) 0%, transparent 60%)}
 .hero-eyebrow{font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;font-weight:500}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:300;color:var(--white);line-height:1.15;margin-bottom:1.5rem;max-width:900px}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:300;color:var(--white);line-height:1.15;margin-bottom:1.5rem;max-width:1000px}
 .hero h1 em{font-style:normal;color:var(--gold)}
-.hero-sub{font-size:1.05rem;color:rgba(255,255,255,0.65);max-width:650px;font-weight:300}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,0.65);max-width:750px;font-weight:300}
 .hero-divider{width:40px;height:1px;background:var(--gold);margin:3rem auto 0}
 .numbers{background:var(--navy-mid);padding:3rem 2rem}
-.numbers-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;text-align:center}
+.numbers-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;text-align:center}
 .stat-val{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:500;color:var(--white);line-height:1}
 .stat-val span{color:var(--gold)}
 .stat-label{font-size:0.8rem;color:rgba(255,255,255,0.5);margin-top:0.4rem;letter-spacing:0.05em;text-transform:uppercase}
 section{padding:6rem 2rem}
-.container{max-width:960px;margin:0 auto}
+.container{max-width:1100px;margin:0 auto}
 .section-tag{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:0.75rem}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;line-height:1.2;margin-bottom:1.25rem;color:var(--navy)}
-.section-sub{font-size:1.05rem;color:var(--gray-text);max-width:700px;font-weight:300}
+.section-sub{font-size:1.05rem;color:var(--gray-text);max-width:800px;font-weight:300}
 .problem-section{background:var(--gray-light)}
-.mandates-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem}
-.mandate-card{background:var(--white);border:1px solid var(--gray-mid);border-radius:8px;padding:2.5rem;transition:border-color 0.2s,transform 0.2s}
-.mandate-card:hover{border-color:var(--blue);transform:translateY(-2px)}
-.mandate-icon{width:40px;height:40px;background:var(--blue-light);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem}
-.mandate-icon svg{width:20px;height:20px;stroke:var(--blue)}
-.mandate-card h4{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:500;color:var(--navy);margin-bottom:1rem;line-height:1.2}
-.mandate-card p{font-size:0.9rem;color:var(--gray-text);font-weight:300;line-height:1.6}
-.about-section{background:var(--navy);color:var(--white)}
-.about-section .section-tag{color:var(--gold)}
-.about-section .section-title{color:var(--white)}
-.about-section .section-sub{color:rgba(255,255,255,0.7)}
-.trust-strip{background:var(--navy-mid);padding:2.5rem 2rem;border-top:1px solid rgba(255,255,255,0.06)}
-.trust-inner{max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:center}
-.trust-label{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-right:1rem}
-.trust-badge{font-size:0.8rem;color:rgba(255,255,255,0.7);font-weight:500;letter-spacing:0.05em}
+.mandates-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;margin-top:3rem}
+.mandate-card{background:var(--white);border:1px solid var(--gray-mid);border-radius:8px;padding:2.5rem;transition:border-color 0.2s,transform 0.2s;display:flex;flex-direction:column}
+.mandate-card:hover{border-color:var(--gold);transform:translateY(-2px)}
 
-/* Partner Section Styles */
-.partner-section{background:var(--white);padding:6rem 2rem;border-top:1px solid var(--gray-mid)}
-.partner-box{background:var(--gray-light);border-radius:8px;padding:3rem;display:flex;flex-direction:column;gap:2rem;border:1px solid var(--gray-mid)}
-.partner-header{display:flex;align-items:center;gap:1.5rem;border-bottom:1px solid var(--gray-mid);padding-bottom:1.5rem}
-.partner-avatar{width:70px;height:70px;background:var(--navy);color:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;}
-.partner-avatar svg{width:35px;height:35px;stroke:currentColor;stroke-width:1.5}
-.partner-info h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--navy);line-height:1.2}
-.partner-info p{font-size:0.9rem;color:var(--blue);font-weight:500;text-transform:uppercase;letter-spacing:0.05em}
-.partner-content p{font-size:1rem;color:var(--gray-text);line-height:1.6}
-.partner-logos{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.5rem}
-.partner-logo-tag{font-size:0.75rem;background:var(--white);padding:0.4rem 1rem;border-radius:4px;border:1px solid var(--gray-mid);color:var(--navy);font-weight:500}
+/* Premium Icons Style */
+.mandate-icon{width:48px;height:48px;background:rgba(201, 169, 110, 0.08);border:1px solid rgba(201, 169, 110, 0.25);border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem}
+.mandate-icon svg{width:24px;height:24px;stroke:var(--navy);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+
+.mandate-card h4{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;color:var(--navy);margin-bottom:1.5rem;line-height:1.2}
+
+/* Bullets Style */
+.mandate-list {
+    margin-top: auto;
+    list-style: none;
+    border-top: 1px solid var(--gray-light);
+    padding-top: 1.5rem;
+}
+.mandate-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    font-weight: 400;
+    line-height: 1.4;
+}
+.mandate-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+/* Testimonial Section */
+.testimonial-section{background:var(--navy);padding:5rem 2rem;text-align:center;}
+.testimonial-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,2rem);color:var(--white);font-style:italic;font-weight:300;max-width:850px;margin:0 auto 2rem;line-height:1.4}
+.testimonial-author{font-size:0.8rem;color:var(--gold);text-transform:uppercase;letter-spacing:0.15em;font-weight:500}
 
 .cta-section{background:var(--white);padding:6rem 2rem;text-align:center;border-top:1px solid var(--gray-mid)}
-.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.5rem}
 .calendar-btn{display:inline-flex;align-items:center;gap:0.75rem;background:var(--blue);color:var(--white);padding:1rem 2.25rem;border-radius:4px;font-size:1rem;font-weight:500;transition:all 0.2s;cursor:pointer}
 .calendar-btn:hover{background:#0058c4;transform:translateY(-1px)}
 .calendar-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2}
@@ -84,7 +95,7 @@ section{padding:6rem 2rem}
 footer{background:var(--navy-mid);padding:2rem;text-align:center;border-top:1px solid rgba(255,255,255,0.06)}
 footer p{font-size:0.78rem;color:rgba(255,255,255,0.4)}
 footer span{color:var(--gold)}
-@media(max-width:600px){nav{padding:1rem}.hero{padding:7rem 1.25rem 3rem}section{padding:4rem 1.25rem}.numbers{padding:2.5rem 1.25rem}.cta-buttons{flex-direction:column;align-items:stretch}.partner-box{padding:2rem}}
+@media(max-width:600px){nav{padding:1rem}.hero{padding:7rem 1.25rem 3rem}section{padding:4rem 1.25rem}.numbers{padding:2.5rem 1.25rem}.cta-buttons{flex-direction:column;align-items:stretch}}
 </style>
 </head>
 <body>
@@ -103,110 +114,132 @@ footer span{color:var(--gold)}
 <div id="content-es">
   <section class="hero">
     <p class="hero-eyebrow">Arquitectura Operativa para Escalar en LATAM</p>
-    <h1>El capital no escala<br>operaciones <em>fragmentadas.</em></h1>
-    <p class="hero-sub">Actuamos como Socios Estratégicos y Ejecutivos Fraccionales para fondos de Capital Privado (PE/VC) y empresas Serie B+. Institucionalizamos operaciones, eliminamos fricciones y aseguramos el crecimiento rentable de tu portafolio.</p>
+    <h1>Transformando operaciones y tecnología en <em>Enterprise Value.</em></h1>
+    <p class="hero-sub">Actuamos como Ejecutivos Fraccionales para corporativos, portafolios de inversión y empresas de alto crecimiento. Institucionalizamos operaciones, integramos ecosistemas tecnológicos complejos y ejecutamos la estandarización corporativa en América Latina.</p>
     <div class="hero-divider"></div>
   </section>
 
   <div class="numbers">
     <div class="numbers-grid">
       <div><div class="stat-val"><span>+</span>25</div><div class="stat-label">Años de Liderazgo Ejecutivo</div></div>
-      <div><div class="stat-val">Serie B<span>+</span></div><div class="stat-label">Enfoque de Hipercrecimiento</div></div>
       <div><div class="stat-val">LATAM</div><div class="stat-label">Cobertura Regional</div></div>
-      <div><div class="stat-val">PE / VC</div><div class="stat-label">Asesoría de Consejo</div></div>
+      <div><div class="stat-val">Multi</div><div class="stat-label">Sectorial de Alto Crecimiento</div></div>
+      <div><div class="stat-val">Board</div><div class="stat-label">Ejecución Nivel Junta</div></div>
     </div>
   </div>
 
   <section class="problem-section">
     <div class="container">
       <p class="section-tag">El Desafío</p>
-      <h2 class="section-title">La brecha entre agilidad<br>y madurez corporativa</h2>
-      <p class="section-sub">El hipercrecimiento en México, Brasil y el resto de la región presenta desafíos que no se resuelven solo con más financiamiento. Cuando la velocidad de una startup choca con la necesidad de estructura institucional, las ineficiencias devoran la rentabilidad operativa. Nosotros entramos a cerrar esa brecha.</p>
+      <h2 class="section-title">La transición de hipercrecimiento<br>a consolidación institucional</h2>
+      <p class="section-sub">El hipercrecimiento en la región presenta desafíos estructurales que no se resuelven únicamente con capital. Cuando la velocidad de expansión choca con infraestructuras fragmentadas, la fricción operativa compromete los márgenes. Nosotros estructuramos su ecosistema para asegurar la escalabilidad.</p>
     </div>
   </section>
 
   <section>
     <div class="container">
       <p class="section-tag">Nuestros Mandatos</p>
-      <h2 class="section-title">Construimos el músculo operativo<br>para tu próxima etapa</h2>
+      <h2 class="section-title">Soluciones Corporativas y<br>Mandatos Ejecutivos</h2>
       <div class="mandates-grid">
+        
+        <!-- Box 1 -->
         <div class="mandate-card">
           <div class="mandate-icon">
-            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
           </div>
-          <h4>Asesoría de Consejo e Inversionistas</h4>
-          <p>Ejecución de due diligence operativo y supervisión estratégica en junta directiva para proteger la inyección de capital y asegurar el ROI de portafolios de inversión.</p>
+          <h4>Transformación Enterprise AI y Automatización</h4>
+          <ul class="mandate-list">
+            <li>Planes de creación de valor (AI Value Creation)</li>
+            <li>Casos de negocio y priorización a 90 días</li>
+            <li>Diseño y supervisión de pruebas de concepto</li>
+          </ul>
         </div>
+
+        <!-- Box 2 -->
         <div class="mandate-card">
           <div class="mandate-icon">
-            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
           </div>
-          <h4>Liderazgo Ejecutivo Fraccional</h4>
-          <p>Diseñamos la estructura de gobierno y la estrategia Go-to-Market necesaria para conquistar mercados regionales, aportando disciplina corporativa sin desangrar la caja.</p>
+          <h4>Gobernanza de IA, Gestión de Riesgos y Cumplimiento</h4>
+          <ul class="mandate-list">
+            <li>Modelo operativo de Gobernanza de IA</li>
+            <li>Revisión de riesgo de modelos y proveedores</li>
+            <li>Reportes ejecutivos para Junta Directiva</li>
+          </ul>
         </div>
+
+        <!-- Box 3 -->
         <div class="mandate-card">
           <div class="mandate-icon">
-            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z"/></svg>
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
           </div>
-          <h4>Transformación e IA Empresarial</h4>
-          <p>Asesoría en la implementación de arquitecturas de negocio avanzadas e Inteligencia Artificial para automatizar procesos clave y absorber el crecimiento acelerado.</p>
+          <h4>Modernización de Arquitectura Tecnológica y Cloud</h4>
+          <ul class="mandate-list">
+            <li>Optimización de costos y arquitectura FinOps</li>
+            <li>Racionalización de aplicaciones y estrategia Cloud</li>
+            <li>Supervisión de integración y resiliencia corporativa</li>
+          </ul>
         </div>
+
+        <!-- Box 4 -->
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg>
+          </div>
+          <h4>Diseño de Modelo Operativo y Ejecución de Transformación</h4>
+          <ul class="mandate-list">
+            <li>Rediseño de modelo operativo corporativo</li>
+            <li>Mejora de márgenes y productividad</li>
+            <li>Recuperación de ejecución (Execution Recovery)</li>
+          </ul>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          </div>
+          <h4>Estrategia Go-to-Market, Entrada a Mercados y Crecimiento</h4>
+          <ul class="mandate-list">
+            <li>Aceleración comercial B2B (Go-to-Market)</li>
+            <li>Arquitectura de pipeline corporativo</li>
+            <li>Soporte ejecutivo en negociaciones clave</li>
+          </ul>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <h4>Liderazgo Ejecutivo Fraccional y Asesoría a Junta Directiva</h4>
+          <ul class="mandate-list">
+            <li>Planes de prioridades a 100 días post-M&A</li>
+            <li>Supervisión de Due Diligence Operativo</li>
+            <li>Asesoría a Chief Investment Officers (CIOs)</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="about-section">
+  <!-- Testimonial Validation -->
+  <section class="testimonial-section">
     <div class="container">
-      <p class="section-tag">Respaldo y Autoridad Institucional</p>
-      <h2 class="section-title">Experiencia corporativa de clase mundial</h2>
-      <p class="section-sub" style="margin-bottom: 2rem;">Con más de 25 años de trayectoria ejecutiva liderando operaciones comerciales en toda América Latina para gigantes globales, nuestra firma aporta rigor institucional a empresas regionales en etapa de hipercrecimiento. No somos consultores teóricos; somos operadores de trinchera y arquitectos de negocios con experiencia real escalando divisiones corporativas multimillonarias.</p>
-    </div>
-  </section>
-
-  <div class="trust-strip">
-    <div class="trust-inner">
-      <span class="trust-label">Experiencia Corporativa Previa</span>
-      <span class="trust-badge">GE Healthcare</span>
-      <span class="trust-badge">Becton Dickinson (BD)</span>
-      <span class="trust-badge">Edwards Lifesciences</span>
-      <span class="trust-badge">Canon</span>
-    </div>
-  </div>
-
-  <!-- NUEVA SECCIÓN DE PARTNERSHIP GLOBAL -->
-  <section class="partner-section">
-    <div class="container">
-      <p class="section-tag">Ecosistema de Ejecución</p>
-      <h2 class="section-title">Nuestra capacidad de arquitectura tecnológica</h2>
-      <p class="section-sub" style="margin-bottom: 3rem;">Para asegurar que la estrategia operativa escale con la tecnología adecuada, Tafoya Partners mantiene una alianza corporativa exclusiva para la implementación de Inteligencia Artificial y gobernanza de datos.</p>
-      
-      <div class="partner-box">
-        <div class="partner-header">
-          <div class="partner-avatar">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
-          </div>
-          <div class="partner-info">
-            <h3>Práctica de IA y Transformación Tecnológica</h3>
-            <p>Respaldada por Partnership Estratégico Global</p>
-          </div>
-        </div>
-        <div class="partner-content">
-          <p>Nuestra práctica tecnológica está respaldada por liderazgo ejecutivo con experiencia directa construyendo infraestructuras para las empresas más grandes del mundo. Traducimos la Inteligencia Artificial y las oportunidades de mercado en agendas prácticas de crecimiento, eficiencia corporativa y modernización.</p>
-          <div class="partner-logos">
-            <span class="partner-logo-tag">Liderazgo Ex-Amazon (AWS)</span>
-            <span class="partner-logo-tag">Arquitectura Pública (Ex-CTO Seattle)</span>
-            <span class="partner-logo-tag">Gobierno y Mitigación de Riesgos AI</span>
-          </div>
-        </div>
-      </div>
+      <p class="section-tag" style="color:var(--gold); margin-bottom: 2rem;">Validación de nuestro Ecosistema Ejecutivo</p>
+      <blockquote class="testimonial-quote">
+        "Un equilibrio entre experiencia en el sector público y privado... una combinación de visión estratégica y profunda experiencia operativa."
+      </blockquote>
+      <p class="testimonial-author">— CEO, Washington Technology Industry Association (WTIA)</p>
     </div>
   </section>
 
   <section class="cta-section">
     <div class="container">
-      <p class="section-tag" style="color:var(--gold)">Siguiente Paso</p>
-      <h2 class="section-title">Preparados para tu próxima etapa de crecimiento</h2>
-      <p class="section-sub" style="margin: 0 auto;">Si estás escalando operaciones en LATAM y necesitas asegurar la ejecución de tu estrategia a nivel directivo, hablemos.</p>
+      <p class="section-tag">Siguiente Paso</p>
+      <h2 class="section-title">Estructuración y Ejecución Directiva</h2>
+      <p class="section-sub" style="margin: 0 auto;">Para iniciar la evaluación del modelo operativo y tecnológico de su organización, programe una sesión ejecutiva con nuestra firma.</p>
       
       <div class="cta-buttons">
         <a class="calendar-btn" href="https://calendar.app.google/w1QGDYqML1Qr54bv7" target="_blank">
@@ -218,7 +251,7 @@ footer span{color:var(--gold)}
           Línea Directa (WhatsApp)
         </a>
       </div>
-      <p class="cta-note">O escríbenos directamente a <a href="mailto:federico@tafoyapartners.com">federico@tafoyapartners.com</a></p>
+      <p class="cta-note">O comuníquese vía correo electrónico a <a href="mailto:federico@tafoyapartners.com">federico@tafoyapartners.com</a></p>
     </div>
   </section>
   <footer>
@@ -230,110 +263,132 @@ footer span{color:var(--gold)}
 <div id="content-en" style="display: none;">
   <section class="hero">
     <p class="hero-eyebrow">Operational Architecture for Scaling in LATAM</p>
-    <h1>Capital doesn't scale<br><em>fragmented</em> operations.</h1>
-    <p class="hero-sub">We act as Strategic Partners and Fractional Executives for Private Equity (PE/VC) funds and Series B+ enterprises. We institutionalize operations, eliminate friction, and ensure profitable growth for your portfolio.</p>
+    <h1>Turning operations and technology into <em>Enterprise Value.</em></h1>
+    <p class="hero-sub">We act as Fractional Executives for corporations, investment portfolios, and high-growth enterprises. We institutionalize operations, integrate complex technological ecosystems, and execute the standardization required to scale across Latin America.</p>
     <div class="hero-divider"></div>
   </section>
 
   <div class="numbers">
     <div class="numbers-grid">
       <div><div class="stat-val"><span>+</span>25</div><div class="stat-label">Years Executive Leadership</div></div>
-      <div><div class="stat-val">Series B<span>+</span></div><div class="stat-label">Hyper-growth Focus</div></div>
       <div><div class="stat-val">LATAM</div><div class="stat-label">Regional Coverage</div></div>
-      <div><div class="stat-val">PE / VC</div><div class="stat-label">Board Advisory</div></div>
+      <div><div class="stat-val">Multi</div><div class="stat-label">Sector-Agnostic High Growth</div></div>
+      <div><div class="stat-val">Board</div><div class="stat-label">Board-Level Execution</div></div>
     </div>
   </div>
 
   <section class="problem-section">
     <div class="container">
       <p class="section-tag">The Challenge</p>
-      <h2 class="section-title">The gap between agility<br>and corporate maturity</h2>
-      <p class="section-sub">Hyper-growth in Mexico, Brazil, and the rest of the region presents challenges that aren't solved just with more funding. When a startup's speed collides with the need for institutional structure, inefficiencies devour operational profitability. We step in to bridge that gap.</p>
+      <h2 class="section-title">The transition from hyper-growth<br>to institutional consolidation</h2>
+      <p class="section-sub">Hyper-growth in the region presents structural challenges that cannot be resolved solely with capital. When the velocity of expansion collides with fragmented infrastructures, operational friction impacts margins. We structure your ecosystem to ensure scalability.</p>
     </div>
   </section>
 
   <section>
     <div class="container">
       <p class="section-tag">Our Mandates</p>
-      <h2 class="section-title">Building the operational muscle<br>for your next stage</h2>
+      <h2 class="section-title">Corporate Solutions &<br>Executive Mandates</h2>
       <div class="mandates-grid">
+        
+        <!-- Box 1 -->
         <div class="mandate-card">
           <div class="mandate-icon">
-            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
           </div>
-          <h4>Board & Investor Advisory</h4>
-          <p>Operational due diligence and strategic board oversight to protect capital injection and ensure ROI for investment portfolios.</p>
+          <h4>Enterprise AI & Automation Transformation</h4>
+          <ul class="mandate-list">
+            <li>AI Value Creation planning & roadmaps</li>
+            <li>Business cases and 90-day prioritization</li>
+            <li>Proof-of-concept design and oversight</li>
+          </ul>
         </div>
+
+        <!-- Box 2 -->
         <div class="mandate-card">
           <div class="mandate-icon">
-            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
           </div>
-          <h4>Fractional Executive Leadership</h4>
-          <p>Designing the governance structure and Go-to-Market strategy needed to conquer regional markets, bringing corporate discipline without bleeding cash.</p>
+          <h4>Corporate AI Governance, Model Risk & Compliance</h4>
+          <ul class="mandate-list">
+            <li>AI Governance target operating models</li>
+            <li>Model and vendor risk assessments</li>
+            <li>Board-level reporting and executive oversight</li>
+          </ul>
         </div>
+
+        <!-- Box 3 -->
         <div class="mandate-card">
           <div class="mandate-icon">
-            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z"/></svg>
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
           </div>
-          <h4>Enterprise Transformation & AI</h4>
-          <p>Advisory on deploying advanced business architectures and Artificial Intelligence to automate key processes and absorb accelerated growth.</p>
+          <h4>Enterprise Technology, Data & Cloud Modernization</h4>
+          <ul class="mandate-list">
+            <li>Cost optimization and FinOps architecture</li>
+            <li>Application rationalization and Cloud strategy</li>
+            <li>Integration oversight and corporate resilience</li>
+          </ul>
         </div>
+
+        <!-- Box 4 -->
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg>
+          </div>
+          <h4>Operating Model Design & Transformation Execution</h4>
+          <ul class="mandate-list">
+            <li>Target operating model redesign</li>
+            <li>Margin expansion and productivity improvement</li>
+            <li>Execution recovery and change leadership</li>
+          </ul>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          </div>
+          <h4>Enterprise Go-to-Market, Market Entry & Growth</h4>
+          <ul class="mandate-list">
+            <li>B2B Go-to-Market acceleration</li>
+            <li>Enterprise pipeline architecture</li>
+            <li>Executive support in major negotiations</li>
+          </ul>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <h4>Fractional Executive, Board & Investor Advisory</h4>
+          <ul class="mandate-list">
+            <li>Post-M&A 100-day value creation plans</li>
+            <li>Operational Due Diligence oversight</li>
+            <li>Advisory for Chief Investment Officers (CIOs)</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="about-section">
+  <!-- Testimonial Validation -->
+  <section class="testimonial-section">
     <div class="container">
-      <p class="section-tag">Institutional Backing & Authority</p>
-      <h2 class="section-title">World-Class Corporate Experience</h2>
-      <p class="section-sub" style="margin-bottom: 2rem;">With over 25 years of executive experience leading commercial operations across Latin America for global giants, our firm brings institutional rigor to regional companies in hyper-growth stages. We are not theoretical consultants; we are hands-on operators and business architects with real experience scaling multi-million dollar corporate divisions.</p>
-    </div>
-  </section>
-
-  <div class="trust-strip">
-    <div class="trust-inner">
-      <span class="trust-label">Prior Corporate Experience</span>
-      <span class="trust-badge">GE Healthcare</span>
-      <span class="trust-badge">Becton Dickinson (BD)</span>
-      <span class="trust-badge">Edwards Lifesciences</span>
-      <span class="trust-badge">Canon</span>
-    </div>
-  </div>
-
-  <!-- NUEVA SECCIÓN DE PARTNERSHIP GLOBAL -->
-  <section class="partner-section">
-    <div class="container">
-      <p class="section-tag">Execution Ecosystem</p>
-      <h2 class="section-title">Our Technological Architecture Capability</h2>
-      <p class="section-sub" style="margin-bottom: 3rem;">To ensure that operational strategy scales with the right technology, Tafoya Partners maintains an exclusive corporate alliance for Artificial Intelligence implementation and data governance.</p>
-      
-      <div class="partner-box">
-        <div class="partner-header">
-          <div class="partner-avatar">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
-          </div>
-          <div class="partner-info">
-            <h3>AI & Technological Transformation Practice</h3>
-            <p>Backed by a Global Strategic Partnership</p>
-          </div>
-        </div>
-        <div class="partner-content">
-          <p>Our technology practice is backed by executive leadership with hands-on experience building infrastructures for the world's largest enterprises. We translate Artificial Intelligence and market opportunities into practical agendas for corporate growth, efficiency, and modernization.</p>
-          <div class="partner-logos">
-            <span class="partner-logo-tag">Ex-Amazon (AWS) Leadership</span>
-            <span class="partner-logo-tag">Public Architecture (Ex-CTO Seattle)</span>
-            <span class="partner-logo-tag">AI Risk Mitigation & Governance</span>
-          </div>
-        </div>
-      </div>
+      <p class="section-tag" style="color:var(--gold); margin-bottom: 2rem;">Executive Leadership Validation</p>
+      <blockquote class="testimonial-quote">
+        "A balance of private and public-sector experience plus a combination of strategic vision and operational expertise."
+      </blockquote>
+      <p class="testimonial-author">— CEO, Washington Technology Industry Association (WTIA)</p>
     </div>
   </section>
 
   <section class="cta-section">
     <div class="container">
-      <p class="section-tag" style="color:var(--gold)">Next Step</p>
-      <h2 class="section-title">Ready for your next stage of growth</h2>
-      <p class="section-sub" style="margin: 0 auto;">If you are scaling operations in LATAM and need to secure the execution of your strategy at the executive level, let's talk.</p>
+      <p class="section-tag">Next Step</p>
+      <h2 class="section-title">Executive Structuring and Execution</h2>
+      <p class="section-sub" style="margin: 0 auto;">To initiate the evaluation of your organization's operational and technological model, schedule an executive session with our firm.</p>
       
       <div class="cta-buttons">
         <a class="calendar-btn" href="https://calendar.app.google/w1QGDYqML1Qr54bv7" target="_blank">
@@ -356,111 +411,133 @@ footer span{color:var(--gold)}
 <!-- ================= PORTUGUÊS ================= -->
 <div id="content-pt" style="display: none;">
   <section class="hero">
-    <p class="hero-eyebrow">Arquitetura Operacional para Escalar na América Latina</p>
-    <h1>O capital não escala<br>operações <em>fragmentadas.</em></h1>
-    <p class="hero-sub">Atuamos como Parceiros Estratégicos e Executivos Fracionários para fundos de Private Equity (PE/VC) e empresas Série B+. Institucionalizamos operações, eliminamos atritos e garantimos o crescimento rentável do seu portfólio.</p>
+    <p class="hero-eyebrow">Arquitetura Operacional para Escalar na LATAM</p>
+    <h1>Transformando operações e tecnologia em <em>Enterprise Value.</em></h1>
+    <p class="hero-sub">Atuamos como Executivos Fracionais para corporações, portfólios de investimento e empresas de alto crescimento. Institucionalizamos operações, integramos ecossistemas tecnológicos complexos e executamos a padronização necessária para escalar na América Latina.</p>
     <div class="hero-divider"></div>
   </section>
 
   <div class="numbers">
     <div class="numbers-grid">
       <div><div class="stat-val"><span>+</span>25</div><div class="stat-label">Anos de Liderança Executiva</div></div>
-      <div><div class="stat-val">Série B<span>+</span></div><div class="stat-label">Foco em Hipercrescimento</div></div>
       <div><div class="stat-val">LATAM</div><div class="stat-label">Cobertura Regional</div></div>
-      <div><div class="stat-val">PE / VC</div><div class="stat-label">Assessoria de Conselho</div></div>
+      <div><div class="stat-val">Multi</div><div class="stat-label">Setorial de Alto Crescimento</div></div>
+      <div><div class="stat-val">Board</div><div class="stat-label">Execução Nível Conselho</div></div>
     </div>
   </div>
 
   <section class="problem-section">
     <div class="container">
       <p class="section-tag">O Desafio</p>
-      <h2 class="section-title">A lacuna entre agilidade<br>e maturidade corporativa</h2>
-      <p class="section-sub">O hipercrescimento no Brasil, México e no resto da região apresenta desafios que não se resolvem apenas com mais financiamento. Quando a velocidade de uma startup se choca com a necessidade de estrutura institucional, as ineficiências devoram a rentabilidade operacional. Nós entramos para preencher essa lacuna.</p>
+      <h2 class="section-title">A transição do hipercrescimento<br>para a consolidação institucional</h2>
+      <p class="section-sub">O hipercrescimento na região apresenta desafios estruturais que não são resolvidos apenas com capital. Quando a velocidade de expansão colide com infraestruturas fragmentadas, o atrito operacional compromete as margens. Nós estruturamos o seu ecossistema para garantir a escalabilidade.</p>
     </div>
   </section>
 
   <section>
     <div class="container">
       <p class="section-tag">Nossos Mandatos</p>
-      <h2 class="section-title">Construímos o músculo operacional<br>para sua próxima fase</h2>
+      <h2 class="section-title">Mandatos e<br>Soluções Corporativas</h2>
       <div class="mandates-grid">
+        
+        <!-- Box 1 -->
         <div class="mandate-card">
           <div class="mandate-icon">
-            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
           </div>
-          <h4>Assessoria de Conselho e Investidores</h4>
-          <p>Execução de due diligence operacional e supervisão estratégica no conselho diretivo para proteger a injeção de capital e garantir o ROI de portfólios de investimento.</p>
+          <h4>Transformação Corporativa via IA e Automação</h4>
+          <ul class="mandate-list">
+            <li>Planos de criação de valor (AI Value Creation)</li>
+            <li>Casos de negócios e priorização de 90 dias</li>
+            <li>Design e supervisão de provas de conceito</li>
+          </ul>
         </div>
+
+        <!-- Box 2 -->
         <div class="mandate-card">
           <div class="mandate-icon">
-            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
           </div>
-          <h4>Liderança Executiva Fracionária</h4>
-          <p>Desenhamos a estrutura de governança e a estratégia Go-to-Market necessárias para conquistar mercados regionais, trazendo disciplina corporativa sem sangrar o caixa.</p>
+          <h4>Governança de IA, Gestão de Riscos e Compliance</h4>
+          <ul class="mandate-list">
+            <li>Modelo operacional de Governança de IA</li>
+            <li>Revisão de riscos de modelos e fornecedores</li>
+            <li>Relatórios executivos para o Conselho (Board)</li>
+          </ul>
         </div>
+
+        <!-- Box 3 -->
         <div class="mandate-card">
           <div class="mandate-icon">
-            <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z"/></svg>
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
           </div>
-          <h4>Transformação e IA Empresarial</h4>
-          <p>Assessoria na implementação de arquiteturas de negócios avançadas e Inteligência Artificial para automatizar processos-chave e absorver o crescimento acelerado.</p>
+          <h4>Modernização de Arquitetura Tecnológica, Dados e Cloud</h4>
+          <ul class="mandate-list">
+            <li>Otimização de custos e arquitetura FinOps</li>
+            <li>Racionalização de aplicações e estratégia Cloud</li>
+            <li>Supervisão de integração e resiliência corporativa</li>
+          </ul>
         </div>
+
+        <!-- Box 4 -->
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg>
+          </div>
+          <h4>Design de Modelo Operacional e Execução de Transformação</h4>
+          <ul class="mandate-list">
+            <li>Redesenho do modelo operacional corporativo</li>
+            <li>Expansão de margens e melhoria de produtividade</li>
+            <li>Recuperação de execução (Execution Recovery)</li>
+          </ul>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          </div>
+          <h4>Estratégia Go-to-Market, Entrada no Mercado e Crescimento</h4>
+          <ul class="mandate-list">
+            <li>Aceleração comercial B2B (Go-to-Market)</li>
+            <li>Arquitetura de pipeline corporativo</li>
+            <li>Suporte executivo em negociações estratégicas</li>
+          </ul>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="mandate-card">
+          <div class="mandate-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <h4>Liderança Executiva Fracional e Assessoria a Investidores</h4>
+          <ul class="mandate-list">
+            <li>Planos de prioridades de 100 dias pós-M&A</li>
+            <li>Supervisão de Due Diligence Operacional</li>
+            <li>Assessoria para Chief Investment Officers (CIOs)</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="about-section">
+  <!-- Testimonial Validation -->
+  <section class="testimonial-section">
     <div class="container">
-      <p class="section-tag">Respaldo e Autoridade Institucional</p>
-      <h2 class="section-title">Experiência Corporativa de Classe Mundial</h2>
-      <p class="section-sub" style="margin-bottom: 2rem;">Com mais de 25 anos de trajetória executiva liderando operações comerciais em toda a América Latina para gigantes globais, nossa firma traz rigor institucional para empresas regionais em fase de hipercrescimento. Não somos consultores teóricos; somos operadores de trincheira e arquitetos de negócios com experiência real escalando divisões corporativas multimillonárias.</p>
-    </div>
-  </section>
-
-  <div class="trust-strip">
-    <div class="trust-inner">
-      <span class="trust-label">Experiência Corporativa Anterior</span>
-      <span class="trust-badge">GE Healthcare</span>
-      <span class="trust-badge">Becton Dickinson (BD)</span>
-      <span class="trust-badge">Edwards Lifesciences</span>
-      <span class="trust-badge">Canon</span>
-    </div>
-  </div>
-
-  <!-- NUEVA SECCIÓN DE PARTNERSHIP GLOBAL -->
-  <section class="partner-section">
-    <div class="container">
-      <p class="section-tag">Ecossistema de Execução</p>
-      <h2 class="section-title">Nossa Capacidade de Arquitetura Tecnológica</h2>
-      <p class="section-sub" style="margin-bottom: 3rem;">Para garantir que a estratégia operacional escale com a tecnologia certa, a Tafoya Partners mantém uma aliança corporativa exclusiva para implementação de Inteligência Artificial e governança de dados.</p>
-      
-      <div class="partner-box">
-        <div class="partner-header">
-          <div class="partner-avatar">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
-          </div>
-          <div class="partner-info">
-            <h3>Prática de IA e Transformação Tecnológica</h3>
-            <p>Apoiada por Partnership Estratégico Global</p>
-          </div>
-        </div>
-        <div class="partner-content">
-          <p>Nossa prática tecnológica é apoiada por liderança executiva com experiência prática na construção de infraestruturas para as maiores empresas do mundo. Traduzimos a Inteligência Artificial e as oportunidades de mercado em agendas práticas de crescimento corporativo, eficiência e modernização.</p>
-          <div class="partner-logos">
-            <span class="partner-logo-tag">Liderança Ex-Amazon (AWS)</span>
-            <span class="partner-logo-tag">Arquitetura Pública (Ex-CTO Seattle)</span>
-            <span class="partner-logo-tag">Governança de Dados e IA</span>
-          </div>
-        </div>
-      </div>
+      <p class="section-tag" style="color:var(--gold); margin-bottom: 2rem;">Validação de Liderança Executiva</p>
+      <blockquote class="testimonial-quote">
+        "Um equilíbrio entre experiência no setor público e privado... uma combinação de visão estratégica e profunda experiência operacional."
+      </blockquote>
+      <p class="testimonial-author">— CEO, Washington Technology Industry Association (WTIA)</p>
     </div>
   </section>
 
   <section class="cta-section">
     <div class="container">
-      <p class="section-tag" style="color:var(--gold)">Próximo Passo</p>
-      <h2 class="section-title">Preparados para sua próxima fase de crescimento</h2>
-      <p class="section-sub" style="margin: 0 auto;">Se você está escalando operações na LATAM e precisa garantir a execução de sua estratégia em nível executivo, vamos conversar.</p>
+      <p class="section-tag">Próximo Passo</p>
+      <h2 class="section-title">Estruturação e Execução Diretiva</h2>
+      <p class="section-sub" style="margin: 0 auto;">Para iniciar a avaliação do modelo operacional e tecnológico da sua organização, agende uma sessão executiva com nossa firma.</p>
       
       <div class="cta-buttons">
         <a class="calendar-btn" href="https://calendar.app.google/w1QGDYqML1Qr54bv7" target="_blank">
