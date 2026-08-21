@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tafoya Partners | Arquitectura Operativa para Escalar en LATAM</title>
+<title>Tafoya Partners | Turning operations and technology into Enterprise Value</title>
 <meta name="description" content="Ejecutivos Fraccionales para fondos de Capital Privado (PE/VC) y empresas de alto crecimiento. Institucionalizamos operaciones y aseguramos Enterprise Value.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Tafoya Partners">
@@ -51,7 +51,7 @@ section{padding:6rem 2rem}
 .mandate-icon{width:48px;height:48px;background:rgba(201, 169, 110, 0.08);border:1px solid rgba(201, 169, 110, 0.25);border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem}
 .mandate-icon svg{width:24px;height:24px;stroke:var(--navy);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round;}
 
-.mandate-card h4{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;color:var(--navy);margin-bottom:1.5rem;line-height:1.2}
+.mandate-card h4{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:var(--navy);margin-bottom:1.5rem;line-height:1.2}
 
 /* Bullets Style */
 .mandate-list {
@@ -77,8 +77,51 @@ section{padding:6rem 2rem}
     font-weight: bold;
 }
 
+/* Engagement Models Style */
+.engagement-models {
+    max-width: 800px;
+    margin: 3rem auto 2.5rem;
+    text-align: left;
+    background: var(--gray-light);
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--gold);
+}
+.engagement-models h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+}
+.engagement-models ul {
+    list-style: none;
+}
+.engagement-models li {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: var(--text);
+    padding-left: 1.5rem;
+    position: relative;
+}
+.engagement-models li:last-child {
+    margin-bottom: 0;
+}
+.engagement-models li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+    font-size: 0.7rem;
+    top: 4px;
+}
+.engagement-models strong {
+    color: var(--navy);
+    font-weight: 600;
+}
+
 .cta-section{background:var(--white);padding:6rem 2rem;text-align:center;border-top:1px solid var(--gray-mid)}
-.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.5rem}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
 .calendar-btn{display:inline-flex;align-items:center;gap:0.75rem;background:var(--blue);color:var(--white);padding:1rem 2.25rem;border-radius:4px;font-size:1rem;font-weight:500;transition:all 0.2s;cursor:pointer}
 .calendar-btn:hover{background:#0058c4;transform:translateY(-1px)}
 .calendar-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2}
@@ -90,7 +133,7 @@ section{padding:6rem 2rem}
 footer{background:var(--navy-mid);padding:2rem;text-align:center;border-top:1px solid rgba(255,255,255,0.06)}
 footer p{font-size:0.78rem;color:rgba(255,255,255,0.4)}
 footer span{color:var(--gold)}
-@media(max-width:600px){nav{padding:1rem}.hero{padding:7rem 1.25rem 3rem}section{padding:4rem 1.25rem}.numbers{padding:2.5rem 1.25rem}.cta-buttons{flex-direction:column;align-items:stretch}}
+@media(max-width:600px){nav{padding:1rem}.hero{padding:7rem 1.25rem 3rem}section{padding:4rem 1.25rem}.numbers{padding:2.5rem 1.25rem}.cta-buttons{flex-direction:column;align-items:stretch}.engagement-models{padding: 1.5rem;}}
 </style>
 </head>
 <body>
@@ -144,9 +187,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Transformación Enterprise AI y Automatización</h4>
           <ul class="mandate-list">
-            <li>Planes de creación de valor (AI Value Creation)</li>
-            <li>Casos de negocio y priorización a 90 días</li>
-            <li>Diseño y supervisión de pruebas de concepto</li>
+            <li>Portafolio de IA y hoja de ruta a 12 meses priorizando productividad y reducción de OpEx.</li>
+            <li>Modelo operativo objetivo y estructuras de gobernanza.</li>
+            <li>Diseño de pilotos y supervisión de ejecución a escala.</li>
           </ul>
         </div>
 
@@ -157,9 +200,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Gobernanza de IA, Gestión de Riesgos y Cumplimiento</h4>
           <ul class="mandate-list">
-            <li>Modelo operativo de Gobernanza de IA</li>
-            <li>Revisión de riesgo de modelos y proveedores</li>
-            <li>Reportes ejecutivos para Junta Directiva</li>
+            <li>Marco de gobernanza de IA y taxonomía de riesgos corporativos.</li>
+            <li>Inventario de casos de uso y diseño de controles de ciclo de vida.</li>
+            <li>Validación de modelos, auditoría de riesgo técnico y reportes para la Junta.</li>
           </ul>
         </div>
 
@@ -168,11 +211,11 @@ footer span{color:var(--gold)}
           <div class="mandate-icon">
             <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
           </div>
-          <h4>Modernización de Arquitectura Tecnológica y Cloud</h4>
+          <h4>Modernización de Tecnología, Datos y Cloud</h4>
           <ul class="mandate-list">
-            <li>Optimización de costos y arquitectura FinOps</li>
-            <li>Racionalización de aplicaciones y estrategia Cloud</li>
-            <li>Supervisión de integración y resiliencia corporativa</li>
+            <li>Estrategia de modernización Cloud, de datos y aplicaciones.</li>
+            <li>Arquitectura FinOps, optimización de costos y priorización de inversiones.</li>
+            <li>Racionalización de aplicaciones y secuenciación de migración.</li>
           </ul>
         </div>
 
@@ -183,9 +226,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Diseño de Modelo Operativo y Ejecución de Transformación</h4>
           <ul class="mandate-list">
-            <li>Rediseño de modelo operativo corporativo</li>
-            <li>Mejora de márgenes y productividad</li>
-            <li>Recuperación de ejecución (Execution Recovery)</li>
+            <li>Rediseño de modelo operativo objetivo y estructura organizacional.</li>
+            <li>Oficina de Transformación (PMO), métricas de desempeño y gobernanza.</li>
+            <li>Liderazgo interino para movilizar equipos y recuperar la ejecución.</li>
           </ul>
         </div>
 
@@ -196,9 +239,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Estrategia Go-to-Market, Entrada a Mercados y Crecimiento</h4>
           <ul class="mandate-list">
-            <li>Aceleración comercial B2B (Go-to-Market)</li>
-            <li>Arquitectura de pipeline corporativo</li>
-            <li>Soporte ejecutivo en negociaciones clave</li>
+            <li>Evaluación de mercado y perfil de cliente ideal (ICP).</li>
+            <li>Propuesta de valor Enterprise y estrategia de canales/alianzas.</li>
+            <li>Arquitectura de pipeline y soporte ejecutivo en negociaciones clave.</li>
           </ul>
         </div>
 
@@ -209,9 +252,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Liderazgo Ejecutivo Fraccional y Asesoría a Junta Directiva</h4>
           <ul class="mandate-list">
-            <li>Tesis de creación de valor, soporte en Due Diligence y planes a 100 días</li>
-            <li>Liderazgo fraccional en transformación, tecnología y crecimiento</li>
-            <li>Soporte en decisiones ejecutivas y revisión de desempeño operativo</li>
+            <li>Tesis de creación de valor y planes de ejecución a 100 días.</li>
+            <li>Soporte en Due Diligence técnico y operativo para procesos de M&A.</li>
+            <li>Liderazgo fraccional integrando crecimiento, tecnología y ejecución.</li>
           </ul>
         </div>
 
@@ -225,6 +268,15 @@ footer span{color:var(--gold)}
       <h2 class="section-title">Estructuración y Ejecución Directiva</h2>
       <p class="section-sub" style="margin: 0 auto;">Para iniciar la evaluación del modelo operativo y tecnológico de su organización, programe una sesión ejecutiva con nuestra firma.</p>
       
+      <div class="engagement-models">
+        <h4>Modelos de Intervención (Engagement Models)</h4>
+        <ul>
+          <li><strong>Executive Diagnostics:</strong> Evaluación focalizada y recomendaciones estratégicas inmediatas.</li>
+          <li><strong>Strategy Sprints:</strong> Flujos de trabajo definidos para generar planes priorizados y casos de negocio.</li>
+          <li><strong>Fractional Leadership & Oversight:</strong> Gobernanza de integración, recuperación de transformación o soporte M&A a nivel directivo (multi-mes).</li>
+        </ul>
+      </div>
+
       <div class="cta-buttons">
         <a class="calendar-btn" href="https://calendar.app.google/w1QGDYqML1Qr54bv7" target="_blank">
           <svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
@@ -282,9 +334,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Enterprise AI & Automation Transformation</h4>
           <ul class="mandate-list">
-            <li>AI Value Creation planning & roadmaps</li>
-            <li>Business cases and 90-day prioritization</li>
-            <li>Proof-of-concept design and oversight</li>
+            <li>Prioritized AI portfolio & 12-month roadmap.</li>
+            <li>Target operating model & governance structures.</li>
+            <li>Pilot design, partner selection, and execution oversight.</li>
           </ul>
         </div>
 
@@ -293,11 +345,11 @@ footer span{color:var(--gold)}
           <div class="mandate-icon">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
           </div>
-          <h4>Corporate AI Governance, Model Risk & Compliance</h4>
+          <h4>AI Governance, Model Risk & Responsible AI</h4>
           <ul class="mandate-list">
-            <li>AI Governance target operating models</li>
-            <li>Model and vendor risk assessments</li>
-            <li>Board-level reporting and executive oversight</li>
+            <li>Enterprise AI-governance framework & risk taxonomy.</li>
+            <li>Use-case inventory & lifecycle control design.</li>
+            <li>Model-validation, technical-risk audit, and board reporting.</li>
           </ul>
         </div>
 
@@ -308,9 +360,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Enterprise Technology, Data & Cloud Modernization</h4>
           <ul class="mandate-list">
-            <li>Cost optimization and FinOps architecture</li>
-            <li>Application rationalization and Cloud strategy</li>
-            <li>Integration oversight and corporate resilience</li>
+            <li>Cloud, data, and application modernization strategy.</li>
+            <li>FinOps, cost optimization, and investment prioritization.</li>
+            <li>Application rationalization and migration sequencing.</li>
           </ul>
         </div>
 
@@ -321,9 +373,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Operating Model Design & Transformation Execution</h4>
           <ul class="mandate-list">
-            <li>Target operating model redesign</li>
-            <li>Margin expansion and productivity improvement</li>
-            <li>Execution recovery and change leadership</li>
+            <li>Target operating model and organization design.</li>
+            <li>Transformation office (PMO), metrics, and governance.</li>
+            <li>Interim leadership to mobilize and recover execution.</li>
           </ul>
         </div>
 
@@ -334,9 +386,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Enterprise Go-to-Market, Market Entry & Growth</h4>
           <ul class="mandate-list">
-            <li>B2B Go-to-Market acceleration</li>
-            <li>Enterprise pipeline architecture</li>
-            <li>Executive support in major negotiations</li>
+            <li>Market assessment and ideal-customer profile (ICP).</li>
+            <li>Enterprise value proposition and channel/alliance strategy.</li>
+            <li>Pipeline architecture and executive deal support.</li>
           </ul>
         </div>
 
@@ -347,9 +399,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Fractional Executive, Board & Investor Advisory</h4>
           <ul class="mandate-list">
-            <li>Value-creation thesis, diligence support and 100-day plans</li>
-            <li>Fractional transformation, technology or growth leadership</li>
-            <li>Executive decision support and independent review of operating performance</li>
+            <li>Value-creation thesis and 100-day execution plans.</li>
+            <li>M&A technical and operational due diligence support.</li>
+            <li>Fractional leadership to bridge growth, tech, and execution.</li>
           </ul>
         </div>
 
@@ -363,6 +415,15 @@ footer span{color:var(--gold)}
       <h2 class="section-title">Executive Structuring and Execution</h2>
       <p class="section-sub" style="margin: 0 auto;">To initiate the evaluation of your organization's operational and technological model, schedule an executive session with our firm.</p>
       
+      <div class="engagement-models">
+        <h4>Engagement Models</h4>
+        <ul>
+          <li><strong>Executive Diagnostics:</strong> Focused assessment and immediate strategic recommendations.</li>
+          <li><strong>Strategy Sprints:</strong> Defined workstreams resulting in a prioritized business case and operating approach.</li>
+          <li><strong>Fractional Leadership & Oversight:</strong> Multi-month integration governance, transformation recovery, or M&A support.</li>
+        </ul>
+      </div>
+
       <div class="cta-buttons">
         <a class="calendar-btn" href="https://calendar.app.google/w1QGDYqML1Qr54bv7" target="_blank">
           <svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
@@ -418,11 +479,11 @@ footer span{color:var(--gold)}
           <div class="mandate-icon">
             <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
           </div>
-          <h4>Transformação Corporativa via IA e Automação</h4>
+          <h4>Transformação Enterprise AI e Automação</h4>
           <ul class="mandate-list">
-            <li>Planos de criação de valor (AI Value Creation)</li>
-            <li>Casos de negócios e priorização de 90 dias</li>
-            <li>Design e supervisão de provas de conceito</li>
+            <li>Portfólio de IA e roadmap de 12 meses priorizando produtividade.</li>
+            <li>Modelo operacional alvo e estruturas de governança.</li>
+            <li>Design de pilotos e supervisão de execução em escala.</li>
           </ul>
         </div>
 
@@ -433,9 +494,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Governança de IA, Gestão de Riscos e Compliance</h4>
           <ul class="mandate-list">
-            <li>Modelo operacional de Governança de IA</li>
-            <li>Revisão de riscos de modelos e fornecedores</li>
-            <li>Relatórios executivos para o Conselho (Board)</li>
+            <li>Framework de governança de IA e taxonomia de riscos corporativos.</li>
+            <li>Inventario de casos de uso e controle de ciclo de vida.</li>
+            <li>Validação de modelos, auditoria de risco e relatórios para o Conselho.</li>
           </ul>
         </div>
 
@@ -444,11 +505,11 @@ footer span{color:var(--gold)}
           <div class="mandate-icon">
             <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
           </div>
-          <h4>Modernização de Arquitetura Tecnológica, Dados e Cloud</h4>
+          <h4>Modernização de Tecnologia, Dados e Cloud</h4>
           <ul class="mandate-list">
-            <li>Otimização de custos e arquitetura FinOps</li>
-            <li>Racionalização de aplicações e estratégia Cloud</li>
-            <li>Supervisión de integração e resiliência corporativa</li>
+            <li>Estratégia de modernização Cloud, de dados e aplicações.</li>
+            <li>Arquitetura FinOps, otimização de custos e priorização de investimentos.</li>
+            <li>Racionalização de aplicações e sequenciamento de migração.</li>
           </ul>
         </div>
 
@@ -459,9 +520,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Design de Modelo Operacional e Execução de Transformação</h4>
           <ul class="mandate-list">
-            <li>Redesenho do modelo operacional corporativo</li>
-            <li>Expansão de margens e melhoria de produtividade</li>
-            <li>Recuperação de execução (Execution Recovery)</li>
+            <li>Redesenho do modelo operacional e estrutura organizacional.</li>
+            <li>Escritório de Transformação (PMO), métricas de desempenho e governança.</li>
+            <li>Liderança interina para mobilizar equipes e recuperar a execução.</li>
           </ul>
         </div>
 
@@ -472,9 +533,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Estratégia Go-to-Market, Entrada no Mercado e Crescimento</h4>
           <ul class="mandate-list">
-            <li>Aceleração comercial B2B (Go-to-Market)</li>
-            <li>Arquitetura de pipeline corporativo</li>
-            <li>Suporte executivo em negociações estratégicas</li>
+            <li>Avaliação de mercado e perfil de cliente ideal (ICP).</li>
+            <li>Proposta de valor Enterprise e estratégia de canais/alianças.</li>
+            <li>Arquitetura de pipeline e suporte executivo em negociações chave.</li>
           </ul>
         </div>
 
@@ -485,9 +546,9 @@ footer span{color:var(--gold)}
           </div>
           <h4>Liderança Executiva Fracional e Assessoria a Investidores</h4>
           <ul class="mandate-list">
-            <li>Tese de criação de valor, suporte em Due Diligence e planos de 100 dias</li>
-            <li>Liderança fracional em transformação, tecnologia e crescimento</li>
-            <li>Suporte em decisões executivas e revisão de desempenho operacional</li>
+            <li>Tese de criação de valor e planos de execução de 100 dias.</li>
+            <li>Suporte em Due Diligence técnica e operacional para M&A.</li>
+            <li>Liderança fracional integrando crescimento, tecnologia e execução.</li>
           </ul>
         </div>
 
@@ -501,6 +562,15 @@ footer span{color:var(--gold)}
       <h2 class="section-title">Estruturação e Execução Diretiva</h2>
       <p class="section-sub" style="margin: 0 auto;">Para iniciar a avaliação do modelo operacional e tecnológico da sua organização, agende uma sessão executiva com nossa firma.</p>
       
+      <div class="engagement-models">
+        <h4>Modelos de Intervenção (Engagement Models)</h4>
+        <ul>
+          <li><strong>Executive Diagnostics:</strong> Avaliação focada e recomendações estratégicas imediatas.</li>
+          <li><strong>Strategy Sprints:</strong> Fluxos de trabalho definidos resultando em casos de negócios e planos priorizados.</li>
+          <li><strong>Fractional Leadership & Oversight:</strong> Governança de integração, recuperação de transformação ou suporte M&A a nível executivo.</li>
+        </ul>
+      </div>
+
       <div class="cta-buttons">
         <a class="calendar-btn" href="https://calendar.app.google/w1QGDYqML1Qr54bv7" target="_blank">
           <svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
