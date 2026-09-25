@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBF5FTLDVT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NBF5FTLDVT');function tp(n,p){try{gtag('event',n,p||{});}catch(e){}}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tafoya Partners | Partners en Latinoamérica de Saad Bashir</title>
@@ -622,14 +625,16 @@ footer span{color:var(--gold)}
 </div>
 
 <script>
-  function toggleDeliv(el){ var c=el.closest('.mandate-card'); c.classList.toggle('open'); el.textContent = c.classList.contains('open') ? el.dataset.open : el.dataset.closed; }
+  function toggleDeliv(el){ var c=el.closest('.mandate-card'); c.classList.toggle('open'); if(c.classList.contains('open')) tp('ver_soluciones',{mandato:(c.querySelector('.mandate-name')||{}).textContent,lang:document.documentElement.lang}); el.textContent = c.classList.contains('open') ? el.dataset.open : el.dataset.closed; }
   (function(){ document.querySelectorAll('.mandate-deliv').forEach(function(el){ el.textContent = el.dataset.closed; el.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggleDeliv(el); } }); }); })();
   function copyMail(el){ try{ if(navigator.clipboard){ navigator.clipboard.writeText('federico@tafoyapartners.com').catch(function(){}); } }catch(e){} var t=el.querySelector('.mail-tip'); if(!t){ t=document.createElement('span'); t.className='mail-tip'; t.textContent=el.dataset.copied; el.appendChild(t);} el.classList.add('copied'); setTimeout(function(){ el.classList.remove('copied'); },1800); }
   function smoothTo(id){ var el=document.getElementById(id); if(!el) return; var start=window.scrollY, end=el.getBoundingClientRect().top+window.scrollY-40, dist=end-start, dur=1400, t0=null; function step(ts){ if(!t0) t0=ts; var p=Math.min((ts-t0)/dur,1), e=p<0.5?2*p*p:-1+(4-2*p)*p; window.scrollTo(0,start+dist*e); if(p<1) requestAnimationFrame(step); } requestAnimationFrame(step); }
   document.addEventListener('click', function(ev){ var a=ev.target.closest('a.hero-cta'); if(a){ ev.preventDefault(); smoothTo(a.getAttribute('href').slice(1)); } var b=ev.target.closest('a.to-top'); if(b){ ev.preventDefault(); smoothTo('top'); } });
+  document.addEventListener('click', function(ev){ var a=ev.target.closest('a'); if(!a) return; var h=a.getAttribute('href')||''; var L=document.documentElement.lang; if(a.classList.contains('hero-cta')) tp('hero_cta',{lang:L}); else if(h.indexOf('wa.me')>-1) tp('contacto_whatsapp',{lang:L}); else if(h.indexOf('mailto:')===0) tp('contacto_correo',{lang:L}); else if(h.indexOf('casos/')>-1) tp('ver_casos',{lang:L}); });
   (function(){ var b=document.createElement('a'); b.className='to-top'; b.href='#top'; b.setAttribute('aria-label','Volver arriba'); b.innerHTML='&uarr;'; document.body.appendChild(b); window.addEventListener('scroll', function(){ b.classList.toggle('show', window.scrollY>600); }, {passive:true}); })();
   function switchLang(lang) {
     document.documentElement.lang = lang;
+    if(window.__langInit) tp('idioma',{lang:lang}); window.__langInit=true;
     document.getElementById('content-es').style.display = (lang === 'es') ? 'block' : 'none';
     document.getElementById('content-en').style.display = (lang === 'en') ? 'block' : 'none';
     document.getElementById('content-pt').style.display = (lang === 'pt') ? 'block' : 'none';

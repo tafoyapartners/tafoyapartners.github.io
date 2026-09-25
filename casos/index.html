@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es" class="case-study-template-active">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBF5FTLDVT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NBF5FTLDVT');function tp(n,p){try{gtag('event',n,p||{});}catch(e){}}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Casos de éxito | Tafoya Partners</title>
@@ -165,7 +168,7 @@ select.sb-select:focus{outline:none;border-color:#000}
 <script>
   var CUR='es';
   function switchLang(lang){ CUR=lang; document.documentElement.lang=lang; ['es','en','pt'].forEach(function(l){ document.getElementById('content-'+l).style.display=(l===lang)?'block':'none'; document.getElementById('btn-'+l).classList.toggle('active',l===lang); }); var sel=document.querySelector('#content-'+lang+' select'); var slug=new URLSearchParams(location.search).get('caso')||'__all__'; sel.value=[...sel.options].some(function(o){return o.value===slug})?slug:'__all__'; pick(sel,true); }
-  function pick(sel,silent){ var root=sel.closest('.sb-page'); var v=sel.value; root.querySelector('.sb-empty').hidden=(v!=='__all__'); root.querySelectorAll('.sb-case').forEach(function(p){ p.hidden=(p.dataset.slug!==v); }); var url=new URL(location.href); if(v==='__all__') url.searchParams.delete('caso'); else url.searchParams.set('caso',v); url.searchParams.set('lang',CUR); history.replaceState(null,'',url); if(!silent) window.scrollTo({top:0}); }
+  function pick(sel,silent){ var root=sel.closest('.sb-page'); var v=sel.value; if(!silent&&v!=='__all__') tp('caso',{caso:v,lang:CUR}); root.querySelector('.sb-empty').hidden=(v!=='__all__'); root.querySelectorAll('.sb-case').forEach(function(p){ p.hidden=(p.dataset.slug!==v); }); var url=new URL(location.href); if(v==='__all__') url.searchParams.delete('caso'); else url.searchParams.set('caso',v); url.searchParams.set('lang',CUR); history.replaceState(null,'',url); if(!silent) window.scrollTo({top:0}); }
   (function(){ var q=new URLSearchParams(location.search).get('lang'); var l=q||(navigator.language||'es').slice(0,2).toLowerCase(); switchLang((l==='pt'||l==='en')?l:'es'); })();
 </script>
 </body>
